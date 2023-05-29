@@ -1,0 +1,45 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.row .col-md-45
+{
+    background-color: lightgray;
+    padding: 10px;
+    width: 600px;
+}
+
+.row .col-md-45 h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.row .col-md-45 .group-form .form-control
+{
+    margin: 10px 0;
+}
+
+.row .col-md-45 a
+{
+    color: white;
+    text-decoration: none;
+}  
+.row .col-md-45 .button
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 10px 0;
+} 

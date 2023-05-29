@@ -1,0 +1,603 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: url('/img/Background.png') top center / cover no-repeat;
+    height: 1500px;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    body
+    {
+        height: 1900px;
+    }
+}
+
+html
+{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#head
+{
+    width: 100%;
+    height: 91px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Logo Avatar */
+#head .avatar
+{
+    height: 91px;
+    line-height: 91px;
+    display: inline-block;
+}
+
+#head .logo-avatar
+{
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+/* Menu Taskbar */
+#head .menu,
+#head .icon-thugon
+{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    padding-left: 300px;
+    top: 0;
+    right: 0;
+}
+
+#head > .menu > .nav > li > a
+{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#head > .menu > .nav > li
+{
+    line-height: 91px;
+    list-style-type: none;
+}
+
+#head > .menu > .nav > li:first-child > a
+{
+    color: #5183B2;
+}
+
+#head .menu .nav li a:hover
+{
+    color: #5183B2;
+}
+
+#head .menu .nav li .subnav2
+{
+    position: absolute;
+    padding: 0;
+    margin-top: -2px;
+    background-color: white;
+    box-shadow: 4px 5px 12px 1px #C7C7C7;
+    display: none;
+    width: 11.5%;
+}
+
+#head .menu .nav li .subnav2 li
+{
+    display: flex;
+    justify-content: left;
+    margin-left: 15px;
+    height: 50px;
+}
+
+#head .menu .nav li .subnav2 li a
+{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+#head .menu .nav li:hover .subnav2
+{
+    display: block;
+}
+
+#head .menu .nav li .subnav2 a:hover
+{
+    color: #5183B2;
+}
+
+/* Tablet cho thanh menu */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* Menu Taskbar */
+    #head .menu
+    {
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        padding-left: 300px;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+}
+
+/* Form */
+.menu-form{
+    position: absolute;
+    background-color: aliceblue;
+    z-index: 2;
+    width: 500px;
+    height: 400px;
+    top: 120%;
+    right: 30%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.menu-form li{
+    list-style: none;
+}
+
+.menu-form > ul:nth-child(1){
+    display: flex;  
+    padding: 0  ;
+}
+
+.menu-form > ul > li {
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.menu-form > ul >li.dangnhap{
+    border-bottom: 2px solid red;
+    font-weight: bolder
+}
+
+.menu-form-0{
+    display: flex;
+    width: 500px;
+    position: relative;
+}
+
+.menu-form-0 > ul{
+    padding: 0;
+}
+
+.menu-form-1{
+    width: 500px;
+    background-color: #B8467A;
+    padding-top: 50px;
+    padding-left: 30px; 
+}
+
+.menu-form-1 ul li input {
+    margin-left: 40px;
+}
+
+.menu-form-1 ul li:nth-child(2) input {
+    margin-left: 78.5px;
+}
+
+.menu-form-1 ul li:nth-child(2) {
+    padding-top: 20px; 
+}
+
+.menu-form-1 ul li:nth-child(3) button{
+    width: 200px;
+    height: 30px;
+}
+
+.menu-form-1 ul li:nth-child(3){
+    padding-top: 60px;
+    padding-left: 90px;
+}
+
+.menu-form-0 .menu-form-1{
+    position: absolute;
+}
+
+.menu-form-0 > ul:nth-child(2) .menu-form-1{
+    transform: translateX(100%);
+}
+
+.menu-form
+{
+    display: none
+}
+
+/* Content */
+#content
+{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    margin-top: 91px;
+}
+
+/* Video */
+#content .video
+{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* padding-bottom: 56.25%; */
+}
+
+#content .video #video-content
+{
+    width: 85%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tablet res phần viedo*/
+@media (min-width: 740px) and (max-width: 1023px) {
+    #content .video
+    {
+        display: flex;
+        justify-content: center;
+        width: 1150px;
+        height: 600px;
+    }
+
+}
+
+/* Icon */
+#content .icon
+{
+    margin-left: 30px;
+    padding-top: 30px;
+}
+
+#content .icon .icon-btn
+{
+    color: black;
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Tablet res phần icon*/
+@media (min-width: 740px) and (max-width: 1023px) {
+    #content .icon
+    {
+        margin-left: 25px;
+        padding-top: 30px;
+    }
+}
+
+/* Khung giới thiệu */
+#content .text-containt
+{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 60%;
+    height: 300px;
+}
+
+/* Chữ Welcome và hai thanh hr hai bên */
+#content .text-containt .text-head
+{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin: 40px 0;
+}
+
+#content .text-containt .text-head hr
+{
+    width: 10%;
+    height: 5px;
+    margin: 0 20px;
+    margin-top: 28px;
+    background-color: #C6C6C7;
+}
+
+#content .text-containt .text-head p
+{
+    font-size: 50px;
+    line-height: 40px;
+}
+
+/* Text center trong khung giới thiệu */
+#content .text-containt .text-center p
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+#content .text-containt .text-center .btn
+{
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    padding: 3px 12px 6px 12px;
+    border-color: none;
+    background: url('/img/Background.png') top center / cover no-repeat;
+}
+
+/* Tablet res phần khung welcome */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* Khung giới thiệu */
+    #content .text-containt
+    {
+        /* position: absolute;
+        top: 65%;
+        left: 50%; */
+        /* transform: translateX(-50%); */
+        background-color: white;
+        width: 95%;
+        height: 300px;
+        margin-top: -120px;
+        margin-left: 190px;
+    }
+
+    /* Chữ Welcome và hai thanh hr hai bên */
+    #content .text-containt .text-head
+    {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        margin: 40px 0;
+    }
+
+    /* Text center trong khung giới thiệu */
+    #content .text-containt .text-center p
+    {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #content .text-containt .text-center .btn
+    {
+        color: black;
+        font-weight: bolder;
+        font-size: 20px;
+        width: 120px;
+        height: 40px;
+        padding: 3px 12px 6px 12px;
+        margin-top: 20px;
+        border-color: none;
+        background: url('/img/Background.png') top center / cover no-repeat;
+    }
+}
+
+/* Kệ sách */
+#content .bookshelf-containt
+{
+    margin-left: 145px;
+    margin-top: 800px;
+}
+
+#content .bookshelf-containt .text-noibat
+{
+    display: flex;
+    background-color: white;
+    margin-top: 270px;
+    width: 90%;
+    height: 40px;
+}
+
+#content .bookshelf-containt .text-noibat hr
+{
+    width: 5%;
+    height: 5px;
+    margin: 0 10px;
+    margin-top: 20px;
+    background-color: #C6C6C7;
+}
+
+#content .bookshelf-containt .text-noibat p
+{
+    line-height: 40px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#content .bookshelf-content
+{
+    display: flex;
+    width: 100%;
+}
+
+#content .bookshelf-containt .bookshelf-content
+{
+    width: 90%;
+    height: 350px;
+    background: url('/img/backgroup_ke_sach.jpg') top center / cover no-repeat;
+}
+
+#content .bookshelf-containt .bookshelf-content .prev-btn,
+#content .bookshelf-containt .bookshelf-content .next-btn
+{
+    width: 15%;
+    text-align: center;
+    margin: 150px 0;
+}
+
+
+#content .bookshelf-containt .bookshelf-content #prev,
+#content .bookshelf-containt .bookshelf-content #next
+{
+    width: 60px;
+    height: 60px;
+}
+
+#content .bookshelf-containt .bookshelf-content #prev:hover,
+#content .bookshelf-containt .bookshelf-content #next:hover
+{
+    cursor: pointer;
+}
+
+#content .bookshelf-containt .bookshelf-content .book-center
+{
+    width: 70%;
+}
+
+#content .bookshelf-containt .bookshelf-content .book-center .book
+{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+#content .bookshelf-containt .bookshelf-content .book-center .book .book-content
+{
+    width: 200px;
+    height: 250px;
+    margin: 0 70px;
+    margin-top: 35px;
+    transition: 2s;
+}
+
+#content .bookshelf-containt .bookshelf-content .book-center .giadosach
+{
+    width: 100%;
+}
+
+#content .bookshelf-containt .bookshelf-content .book-center .giadosach .kesach
+{
+    margin-top: -200px;
+    margin-left: 10px;
+}
+
+/* Tablet res phần icon*/
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* Kệ sách */
+    #content .bookshelf-containt
+    {
+        margin-left: 145px;
+        margin-top: 680px;
+        width: 125%;
+    }
+
+    #content .bookshelf-containt .text-noibat
+    {
+        display: flex;
+        background-color: white;
+        margin-top: 270px;
+        width: 90%;
+        height: 40px;
+    }
+
+    #content .bookshelf-containt .text-noibat hr
+    {
+        width: 5%;
+        height: 5px;
+        margin: 0 10px;
+        margin-top: 20px;
+        background-color: #C6C6C7;
+    }
+
+    #content .bookshelf-containt .text-noibat p
+    {
+        line-height: 40px;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+
+    #content .bookshelf-content
+    {
+        display: flex;
+        width: 100%;
+    }
+
+    #content .bookshelf-containt .bookshelf-content
+    {
+        width: 90%;
+        height: 350px;
+        background: url('/img/backgroup_ke_sach.jpg') top center / cover no-repeat;
+    }
+
+    #content .bookshelf-containt .bookshelf-content .prev-btn,
+    #content .bookshelf-containt .bookshelf-content .next-btn
+    {
+        width: 10%;
+        text-align: center;
+        margin: 150px 0;
+    }
+
+
+    #content .bookshelf-containt .bookshelf-content #prev,
+    #content .bookshelf-containt .bookshelf-content #next
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    #content .bookshelf-containt .bookshelf-content #prev:hover,
+    #content .bookshelf-containt .bookshelf-content #next:hover
+    {
+        cursor: pointer;
+    }
+
+    #content .bookshelf-containt .bookshelf-content .book-center
+    {
+        width: 80%;
+    }
+
+    #content .bookshelf-containt .bookshelf-content .book-center .book
+    {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+
+    #content .bookshelf-containt .bookshelf-content .book-center .book .book-content
+    {
+        width: 200px;
+        height: 250px;
+        margin: 0 30px;
+        margin-top: 35px;
+        transition: 2s;
+    }
+
+    #content .bookshelf-containt .bookshelf-content .book-center .giadosach
+    {
+        width: 100%;
+    }
+
+    #content .bookshelf-containt .bookshelf-content .book-center .giadosach .kesach
+    {
+        margin-top: -160px;
+        margin-left: -25px;
+        width: 730px;
+    }
+}

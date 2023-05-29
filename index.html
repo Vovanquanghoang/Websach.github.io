@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="head">
+            <div class="avatar">
+                <img src="./img/Untitled-removebg-preview.png" alt="logo" class="logo-avatar">
+            </div>
+
+            <!-- Thanh menu -->
+            <div class="menu">
+                <ul class="nav">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Danh mục</a></li>
+                    <li><a href="#">Sự kiện</a></li>
+                    <li><a href="#">Diễn đàn</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li>
+                        <a href="#">Tài khoản</a>
+                        <ul class="subnav2">
+                            <li><a href="dangky.html">Đăng ký</a></li>
+                            <li><a href="dangnhap.html">Đăng nhập</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon-thugon">
+                <ion-icon name="reorder-four-outline"></ion-icon>
+            </div>
+
+            <!-- Form tài khoản -->
+            <div class="menu-form">
+                <ul>
+                    <li class="dangnhap">Đăng Nhập</li>
+                    <li class="dangky">Đăng Ký</li>
+                </ul>
+                <div class="menu-form-0">
+                    <ul>
+                        <div class="menu-form-1">
+                            <ul>
+                                <li>Tên đăng nhập <input type="text"></li>
+                                <li>Mật khẩu <input type="text"></li>
+                                <li><button>Đăng Nhập</button></li>
+                            </ul>
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="menu-form-1" style="background-color: aqua;">
+                            <ul>
+                                <li>Tên đăng nhập <input type="text"></li>
+                                <li>Mật khẩu <input type="text"></li>
+                                <li><button>Đăng Nhập</button></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- Video -->
+            <div class="video">
+                <video src="/video/file.mp4" autoplay loop id="video-content"></video>
+            </div>
+            <!-- Icon -->
+            <div class="icon">
+                <a href="#"><ion-icon name="notifications" class="icon-btn"></ion-icon></a> <br>
+                <a href="#"><ion-icon name="chatbubble-ellipses" class="icon-btn"></ion-icon></a> <br>
+                <a href="#"><ion-icon name="logo-facebook" class="icon-btn"></ion-icon></a>
+            </div>
+            <!-- Khung giới thiệu -->
+            <div class="text-containt">
+                <div class="text-head">
+                    <hr>
+                    <p><b>Welcome</b></p>
+                    <hr>
+                </div>
+                <div class="text-center">
+                    <p id="book-sell">Chào mừng bạn đến với nền tảng sách điện tử trực tuyến của chúng tôi. <br>
+                        Chúng tôi mong muốn mang sách đến gần hơn với mọi người bằng cách cung cấp <br>
+                        một thư viện điện tử dễ dàng truy cập và cập nhật liên tục.
+                    </p>
+                    <a href="#book-sell" class="btn btn-primary" >Let's go</a>
+                </div>
+            </div>
+            <!-- Kệ sách -->
+            <div class="bookshelf-containt" >
+                <div class="text-noibat">
+                    <hr>
+                    <p>Sách nổi bật</p>
+                </div>
+                <div class="bookshelf-content">
+                    <div class="prev-btn">
+                        <ion-icon name="chevron-back-circle-outline" id="prev"></ion-icon>
+                    </div>
+                    <div class="book-center">
+                        <div class="book">
+                            <img src="./img/sach1.jpg" alt="" class="book-content">
+                            <img src="./img/sach2.jpg" alt="" class="book-content">
+                            <img src="./img/sach3.jpg" alt="" class="book-content">
+                            <img src="./img/sach4.jpg" alt="" class="book-content">
+                            <img src="./img/sach5.jpg" alt="" class="book-content">
+                        </div>
+                        <div class="giadosach">
+                            <img src="./img/book_bg-removebg-preview.png" alt="" class="kesach">
+                        </div>
+                    </div>
+                    <div class="next-btn">
+                        <ion-icon name="chevron-forward-circle-outline" id="next"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
